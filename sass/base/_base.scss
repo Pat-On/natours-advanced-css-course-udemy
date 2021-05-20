@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* ROOT FONT SIZE - SMART DESIGN */
+html {
+  /* wrong approach - because it is going block scaling */
+  /* font-size: 10px;  */
+
+  // this define what 1 rem is
+  font-size: 62.5%;
+  /* we used it because default is 16pixels and we want t gave 10 as a base and not to block
+  user from zooming the page
+  SIMPLE and powerful! 
+  */
+}
+
+body {
+  box-sizing: border-box;
+}
