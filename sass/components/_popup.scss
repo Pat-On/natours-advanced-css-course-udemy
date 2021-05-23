@@ -13,6 +13,17 @@
 
   transition: all 0.3s;
 
+  // it is working in this new version - > so the course is quite old :D
+  backdrop-filter: blur(10px);
+
+  // example how working @supports
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba($color-black, 0.3);
+  }
+
   // using this property to show up property
 
   &__content {

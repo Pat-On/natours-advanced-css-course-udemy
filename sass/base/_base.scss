@@ -11,13 +11,39 @@ html {
   /* font-size: 10px;  */
 
   // this define what 1 rem is
-  font-size: 62.5%;
+  font-size: 62.5%; // 1 rem = 10px
   /* we used it because default is 16pixels and we want t gave 10 as a base and not to block
   user from zooming the page
   SIMPLE and powerful! 
   */
+
+  // @include respond(phone) {
+  //   font-size: 50%;
+  // }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1 rem = 8px 9/16
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1 rem = 8px 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }
