@@ -1,3 +1,28 @@
+/*
+max
+0-600px: phone
+600 - 900px tablet portrait
+900 1200 tablet landscape
+
+[1200-1800] is where our normal styles apply  <- desktop first 
+
+min
+1800px ++ big desktop
+
+*/
+/*
+$breakpoint argument choices
+- phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+/*
+em and rem are not effected in media queries by root values
+so media queries always depends from default in browser and if user is going to change them it is going to be different value
+
+em - are the best option for media queries
+*/
 *,
 *::after,
 *::before {
@@ -14,6 +39,15 @@ html {
   user from zooming the page
   SIMPLE and powerful! 
   */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
