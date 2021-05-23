@@ -921,7 +921,7 @@ body {
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem; } }
+      padding: 20rem 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -933,7 +933,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 10rem; } }
+      padding: 10rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7;
