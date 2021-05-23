@@ -184,7 +184,9 @@
   }
 
   // he decided to copy that all because that is easier
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+  //!IMPORTANT: !TODO: solution for not "hovering" device
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
